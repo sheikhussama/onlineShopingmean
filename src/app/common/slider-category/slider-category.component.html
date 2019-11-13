@@ -1,0 +1,171 @@
+<div class="cat-menu">
+    <ul id="category">
+        <li class="cat-title"><a ui-sref="products({slug: 'all'})" href="/category/all">Categories</a></li>
+        <!-- ngRepeat: parentCategory in parentCategories -->
+        <li ng-repeat="parentCategory in parentCategories" class="ng-scope"><a
+                ui-sref="products({slug: parentCategory.slug})" class="ng-binding" href="/category/fixtures">Fixtures<i
+                    class="fa fa-angle-right"></i></a>
+            <ul class="sub-menu clearfix">
+                <li class="sub-sec col-md-6">
+                    <ul>
+                        <li><a class="title ng-binding" ui-sref="products({slug: parentCategory.slug})"
+                                href="/category/fixtures">Fixtures</a></li>
+                        <!-- ngRepeat: category in parentCategory.children -->
+                        <li ng-repeat="category in parentCategory.children" class="ng-scope"><a
+                                ui-sref="products({slug: category.slug})" class="ng-binding"
+                                href="/category/ameet">ameet</a></li>
+                        <!-- end ngRepeat: category in parentCategory.children -->
+                    </ul>
+                </li>
+            </ul>
+        </li><!-- end ngRepeat: parentCategory in parentCategories -->
+        <li ng-repeat="parentCategory in parentCategories" class="ng-scope"><a
+                ui-sref="products({slug: parentCategory.slug})" class="ng-binding"
+                href="/category/computers-and-accessories">Computers and Accessories<i
+                    class="fa fa-angle-right"></i></a>
+            <ul class="sub-menu clearfix">
+                <li class="sub-sec col-md-6">
+                    <ul>
+                        <li><a class="title ng-binding" ui-sref="products({slug: parentCategory.slug})"
+                                href="/category/computers-and-accessories">Computers and Accessories</a></li>
+                        <!-- ngRepeat: category in parentCategory.children -->
+                        <li ng-repeat="category in parentCategory.children" class="ng-scope"><a
+                                ui-sref="products({slug: category.slug})" class="ng-binding"
+                                href="/category/laptops">Laptops</a></li>
+                        <!-- end ngRepeat: category in parentCategory.children -->
+                        <li ng-repeat="category in parentCategory.children" class="ng-scope"><a
+                                ui-sref="products({slug: category.slug})" class="ng-binding"
+                                href="/category/desktops">Desktops</a></li>
+                        <!-- end ngRepeat: category in parentCategory.children -->
+                    </ul>
+                </li>
+            </ul>
+        </li><!-- end ngRepeat: parentCategory in parentCategories -->
+        <li ng-repeat="parentCategory in parentCategories" class="ng-scope"><a
+                ui-sref="products({slug: parentCategory.slug})" class="ng-binding"
+                href="/category/phones-and-tablets">Phones and Tablets<i class="fa fa-angle-right"></i></a>
+            <ul class="sub-menu clearfix">
+                <li class="sub-sec col-md-6">
+                    <ul>
+                        <li><a class="title ng-binding" ui-sref="products({slug: parentCategory.slug})"
+                                href="/category/phones-and-tablets">Phones and Tablets</a></li>
+                        <!-- ngRepeat: category in parentCategory.children -->
+                        <li ng-repeat="category in parentCategory.children" class="ng-scope"><a
+                                ui-sref="products({slug: category.slug})" class="ng-binding"
+                                href="/category/phones">Phones</a></li>
+                        <!-- end ngRepeat: category in parentCategory.children -->
+                        <li ng-repeat="category in parentCategory.children" class="ng-scope"><a
+                                ui-sref="products({slug: category.slug})" class="ng-binding"
+                                href="/category/tablets">Tablets</a></li>
+                        <!-- end ngRepeat: category in parentCategory.children -->
+                    </ul>
+                </li>
+            </ul>
+        </li><!-- end ngRepeat: parentCategory in parentCategories -->
+        <li ng-repeat="parentCategory in parentCategories" class="ng-scope"><a
+                ui-sref="products({slug: parentCategory.slug})" class="ng-binding" href="/category/fashion">Fashion<i
+                    class="fa fa-angle-right"></i></a>
+            <ul class="sub-menu clearfix">
+                <li class="sub-sec col-md-6">
+                    <ul>
+                        <li><a class="title ng-binding" ui-sref="products({slug: parentCategory.slug})"
+                                href="/category/fashion">Fashion</a></li>
+                        <!-- ngRepeat: category in parentCategory.children -->
+                        <li ng-repeat="category in parentCategory.children" class="ng-scope"><a
+                                ui-sref="products({slug: category.slug})" class="ng-binding"
+                                href="/category/men">Men</a></li>
+                        <!-- end ngRepeat: category in parentCategory.children -->
+                        <li ng-repeat="category in parentCategory.children" class="ng-scope"><a
+                                ui-sref="products({slug: category.slug})" class="ng-binding"
+                                href="/category/women">Women</a></li>
+                        <!-- end ngRepeat: category in parentCategory.children -->
+                        <li ng-repeat="category in parentCategory.children" class="ng-scope"><a
+                                ui-sref="products({slug: category.slug})" class="ng-binding"
+                                href="/category/childrens">Childrens</a></li>
+                        <!-- end ngRepeat: category in parentCategory.children -->
+                        <li ng-repeat="category in parentCategory.children" class="ng-scope"><a
+                                ui-sref="products({slug: category.slug})" class="ng-binding"
+                                href="/category/boys">Boys</a></li>
+                        <!-- end ngRepeat: category in parentCategory.children -->
+                    </ul>
+                </li>
+            </ul>
+        </li><!-- end ngRepeat: parentCategory in parentCategories -->
+        <li ng-repeat="parentCategory in parentCategories" class="ng-scope"><a
+                ui-sref="products({slug: parentCategory.slug})" class="ng-binding" href="/category/books">Books<i
+                    class="fa fa-angle-right"></i></a>
+            <ul class="sub-menu clearfix">
+                <li class="sub-sec col-md-6">
+                    <ul>
+                        <li><a class="title ng-binding" ui-sref="products({slug: parentCategory.slug})"
+                                href="/category/books">Books</a></li>
+                        <!-- ngRepeat: category in parentCategory.children -->
+                        <li ng-repeat="category in parentCategory.children" class="ng-scope"><a
+                                ui-sref="products({slug: category.slug})" class="ng-binding"
+                                href="/category/asas">asas</a></li>
+                        <!-- end ngRepeat: category in parentCategory.children -->
+                        <li ng-repeat="category in parentCategory.children" class="ng-scope"><a
+                                ui-sref="products({slug: category.slug})" class="ng-binding"
+                                href="/category/ameet11">ameet11</a></li>
+                        <!-- end ngRepeat: category in parentCategory.children -->
+                    </ul>
+                </li>
+            </ul>
+        </li><!-- end ngRepeat: parentCategory in parentCategories -->
+        <li ng-repeat="parentCategory in parentCategories" class="ng-scope"><a
+                ui-sref="products({slug: parentCategory.slug})" class="ng-binding" href="/category/art-works">Art
+                Works<i class="fa fa-angle-right"></i></a>
+            <ul class="sub-menu clearfix">
+                <li class="sub-sec col-md-6">
+                    <ul>
+                        <li><a class="title ng-binding" ui-sref="products({slug: parentCategory.slug})"
+                                href="/category/art-works">Art Works</a></li>
+                        <!-- ngRepeat: category in parentCategory.children -->
+                        <li ng-repeat="category in parentCategory.children" class="ng-scope"><a
+                                ui-sref="products({slug: category.slug})" class="ng-binding"
+                                href="/category/foreign">Foreign</a></li>
+                        <!-- end ngRepeat: category in parentCategory.children -->
+                        <li ng-repeat="category in parentCategory.children" class="ng-scope"><a
+                                ui-sref="products({slug: category.slug})" class="ng-binding"
+                                href="/category/local">Local</a></li>
+                        <!-- end ngRepeat: category in parentCategory.children -->
+                    </ul>
+                </li>
+            </ul>
+        </li><!-- end ngRepeat: parentCategory in parentCategories -->
+        <li ng-repeat="parentCategory in parentCategories" class="ng-scope"><a
+                ui-sref="products({slug: parentCategory.slug})" class="ng-binding"
+                href="/category/foods-and-recipee">Foods and Recipee<i class="fa fa-angle-right"></i></a>
+            <ul class="sub-menu clearfix">
+                <li class="sub-sec col-md-6">
+                    <ul>
+                        <li><a class="title ng-binding" ui-sref="products({slug: parentCategory.slug})"
+                                href="/category/foods-and-recipee">Foods and Recipee</a></li>
+                        <!-- ngRepeat: category in parentCategory.children -->
+                    </ul>
+                </li>
+            </ul>
+        </li><!-- end ngRepeat: parentCategory in parentCategories -->
+        <li ng-repeat="parentCategory in parentCategories" class="ng-scope"><a
+                ui-sref="products({slug: parentCategory.slug})" class="ng-binding"
+                href="/category/home-and-kitchen">Home and Kitchen<i class="fa fa-angle-right"></i></a>
+            <ul class="sub-menu clearfix">
+                <li class="sub-sec col-md-6">
+                    <ul>
+                        <li><a class="title ng-binding" ui-sref="products({slug: parentCategory.slug})"
+                                href="/category/home-and-kitchen">Home and Kitchen</a></li>
+                        <!-- ngRepeat: category in parentCategory.children -->
+                        <li ng-repeat="category in parentCategory.children" class="ng-scope"><a
+                                ui-sref="products({slug: category.slug})" class="ng-binding"
+                                href="/category/home">Home</a></li>
+                        <!-- end ngRepeat: category in parentCategory.children -->
+                        <li ng-repeat="category in parentCategory.children" class="ng-scope"><a
+                                ui-sref="products({slug: category.slug})" class="ng-binding"
+                                href="/category/kitchen">Kitchen</a></li>
+                        <!-- end ngRepeat: category in parentCategory.children -->
+                    </ul>
+                </li>
+            </ul>
+        </li><!-- end ngRepeat: parentCategory in parentCategories -->
+    </ul>
+</div>

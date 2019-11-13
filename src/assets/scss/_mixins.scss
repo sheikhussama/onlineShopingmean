@@ -1,0 +1,30 @@
+$mobile-screen: 600px;
+$tablet-screen: 992px;
+$desktop-screen: 1199px;
+$large-desktop: 1200px;
+
+@mixin mobileScreen {
+  @media (max-width: #{$mobile-screen}) {
+    @content;
+  }
+}
+@mixin mediumScreen {
+  @media (max-width: #{$tablet-screen}) {
+    @content;
+  }
+}
+@mixin largeScreen {
+  @media (max-width: #{$desktop-screen}) {
+    @content;
+  }
+}
+@mixin largeScreenOnly {
+  @media (min-width: #{$desktop-screen}) {
+    @content;
+  }
+}
+@mixin extraLargeScreen {
+  @media (min-width: #{$large-desktop}) {
+    @content;
+  }
+}
